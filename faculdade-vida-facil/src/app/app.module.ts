@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
+//import { CartService } from './shared';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './shared/components/header/header.module';
+//import { HeaderModule } from './shared/components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,12 @@ import { HeaderModule } from './shared/components/header/header.module';
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    HeaderModule,
-    NgbModule.forRoot(),
+    //HeaderModule,
+    //NgbModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    //CartService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

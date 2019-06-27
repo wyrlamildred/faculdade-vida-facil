@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { StoreRoutingModule } from './store-routing.module';
-import { StoreComponent } from './store.component';
+//import { StoreComponent } from './store.component';
 
 @NgModule({
   declarations: [
-    StoreComponent
+    //StoreComponent
   ],
   imports: [
     CommonModule,
