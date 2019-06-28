@@ -16,8 +16,7 @@ import { HeaderModule } from './shared/components/header/header.module';
     CommonModule,
     AppRoutingModule,
     HeaderModule,
-    NgbModule.forRoot()
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
