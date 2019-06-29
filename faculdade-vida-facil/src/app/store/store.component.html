@@ -1,127 +1,90 @@
-<div class="container-fluid">
 
-  <!-- START: Form Product -->
-  <div class="container bg-white shadow-sm p-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="font-weight-light mb-4">Qual Curso Vai</h2>
+<div class="container">
+    <div class="jumbotron">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Qual o Curso vai Escolher ?
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Administração</a>
+          <a class="dropdown-item" href="#">Ciências Biologicas</a>
+          <a class="dropdown-item" href="#">Ciências Contábeis</a>
+          <a class="dropdown-item" href="#">Direito</a>
+          <a class="dropdown-item" href="#">Ed. Fisica</a>
+          <a class="dropdown-item" href="#">Enfermagem</a>
+          <a class="dropdown-item" href="#">Engenharia Civil</a>
+          <a class="dropdown-item" href="#">Informatica</a>
+          <a class="dropdown-item" href="#">Matematica</a>
+          <a class="dropdown-item" href="#">Medicina</a>
+          <a class="dropdown-item" href="#">Pedagogia</a>
+          <a class="dropdown-item" href="#">Psicologia</a>
+        </div>
       </div>
-      <div class="col-md-12">
-        <form>
-          <div class="form-row">
-            <div class="col-7">
-              <input type="text" class="form-control" placeholder="Product name">
-            </div>
-            <div class="col">
-              <input type="number" class="form-control" placeholder="Price">
-            </div>
-            <div class="col">
-              <input type="number" class="form-control" placeholder="Sales">
-            </div>
-            <div class="form-check col form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label text-muted" for="inlineCheckbox1">Active</label>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-outline-primary">Create</button>
-            </div>
+
+  <form>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationServer01">Nome</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Primeiro Nome" required>
+        <div class="valid-feedback">
+          Vamos la!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServer02">Sobrenome</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Ultimos Nomes" required>
+        <div class="valid-feedback">
+          Ta Terminando!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServerUsername">Usuario</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
           </div>
-        </form>
+          <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="@apelidio" aria-describedby="inputGroupPrepend3" required>
+          <div class="invalid-feedback">
+            Um Apelidio Bonitinho em !
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- END: Form Product -->
-
-  <!-- START: Table Product -->
-  <div class="container bg-white shadow-sm p-5 mt-4">
-    <div class="row">
-      <div class="col-md-12">
-
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Cidade</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+        <div class="invalid-feedback">
+          Sua Cidade !
+        </div>
       </div>
-
-      <div class="col-md-12">
-        <table class="table table-products">
-          <thead class="shadow-sm thead-light">
-            <tr>
-              <th scope="col">
-                <input type="checkbox">
-              </th>
-              <th scope="col">Curso</th>
-              <th scope="col">Nota</th>
-              <th scope="col">Porcentagem %</th>
-              <th scope="col">Status</th>
-              <th scope="col">Ativo</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">
-                <input type="checkbox">
-              </td>
-              <td>
-                <div>
-                  <img src="assets/img/" alt="Product" title="Chair" class="rounded mr-3" height="48">
-                  <p class="m-0 d-inline-block align-middle font-16">
-                    <a href="#" class="text-body">Adirondack Chair</a>
-                    <br>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star-half-o"></span>
-                  </p>
-                </div>
-              </td>
-              <td>
-                $65.94
-              </td>
-              <td>12%</td>
-              <td>
-                <span class="badge badge-success">Active</span>
-              </td>
-              <td class="table-action">
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-edit"></i></a>
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
-              </td>
-            </tr>
-
-            <tr>
-              <td scope="row">
-                <input type="checkbox">
-              </td>
-              <td>
-                <div>
-                  <img src="assets/img/products/product-2.jpg" alt="Product" title="Chair" class="rounded mr-3" height="48">
-                  <p class="m-0 d-inline-block align-middle font-16">
-                    <a href="#" class="text-body">Amazing Modern Chair </a>
-                    <br>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                    <span class="text-warning fa fa-star"></span>
-                  </p>
-                </div>
-              </td>
-              <td>
-                $146.66
-              </td>
-              <td>10%</td>
-              <td>
-                <span class="badge badge-danger">Deactive</span>
-              </td>
-              <td class="table-action">
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-edit"></i></a>
-                <a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer04">Estado</label>
+        <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+        <div class="invalid-feedback">
+          Meu Estado de Coração é?
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer05">Cep da Minha Rua É</label>
+        <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+        <div class="invalid-feedback">
+          O meu Cep é aquele que esta na minha conta !
+        </div>
       </div>
     </div>
-  </div>
-  <!-- END: Table Product -->
-
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+        <label class="form-check-label" for="invalidCheck3">
+          Concordo com os termos e condições
+        </label>
+        <div class="invalid-feedback">
+          Você deve concordar, antes de continuar.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Concordo</button>
+  </form>
+</div>
 </div>
