@@ -21,7 +21,6 @@ export class ProductsComponent implements OnInit {
     const localProducts = localStorage.getItem('ls-products');
     products = JSON.parse(localProducts);
 
-    // Filter and return all diff by id
     updateProducts = products.filter(item => item.id !== id);
 
     // Save on localstorage
